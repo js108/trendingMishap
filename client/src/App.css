@@ -1,31 +1,115 @@
-.App {
-  text-align: center;
-  font-family: "Courier New", monospace;
+a {
+  color: white;
+}
+
+.grid-container {
+  max-width: 800px;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20%;
+  grid-column-gap: 6.7%;
+  grid-row-gap: 1em;
+}
+
+.grid-child-0 {
+  grid-column-start: 1; 
+  grid-column-end: 2; 
+  grid-row-start: 1; 
+  grid-row-end: 2; 
+
+}
+
+.grid-child-1 {
+  grid-column-start: 2; 
+  grid-column-end: 5; 
+  grid-row-start: 1; 
+  grid-row-end: 2; 
+
+}
+
+.grid-child-2 {
+  grid-column-start: 1; 
+  grid-column-end: 3; 
+  grid-row-start: 2; 
+  grid-row-end: 3; 
+
+}
+
+.grid-child-3 {
+  grid-column-start: 3; 
+  grid-column-end: 5; 
+  grid-row-start: 2; 
+  grid-row-end: 3; 
+
+}
+
+.grid-child-4 {
+  grid-column-start: 1; 
+  grid-column-end: 5; 
+  grid-row-start: 3; 
+  grid-row-end: 4; 
+}
+
+.grid-child-loading {
+  grid-column-start: 1; 
+  grid-column-end: 5; 
+  grid-row-start: 2; 
+  grid-row-end: 4; 
+}
+
+.center {
+  margin: 0 auto;
+}
+
+.padding {
+  padding: 10px;
+}
+
+p {
+  line-height: 1.5em;
+  margin: 0;
+}
+
+.tweet{
+  max-width: 500px;
+}
+
+.tweet-content {
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+img#display-image {
+    width: 100%;
+}
+
+.tweet-button {
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  width: 100px;
+  margin-top: 1em;
+}
+
+.tweet-button a {
+  text-decoration: none;
+}
+
+.tweet-button h3 {
+  margin: 0;
+}
+
+.logo {
+  border-radius: 50%;
+}
+
+.btn-text {
+  text-align: center 
+}
+
+select {
   width: 100%;
-}
-
-h1 {
-  font-weight: normal;
-  font-size: 42px;
-}
-
-.passwords {
-  list-style: none;
-  padding: 0;
-  font-size: 32px;
-  margin-bottom: 2em;
-}
-
-.more {
-  font-size: 32px;
-  font-family: "Courier New", monospace;
-  border: 2px solid #000;
-  background-color: #fff;
-  padding: 10px 25px;
-}
-.more:hover {
-  background-color: #FDD836;
-}
-.more:active {
-  background-color: #FFEFA9;
+  background: #1DA1F2;
+  color: #ffffff;
+  border-color: #ffffff;
+  font-size: 1.5em;
 }
