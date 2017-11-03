@@ -8,8 +8,7 @@ const tweetReader = require('./myModules/tweetReader');
 const trendComposer = require('./myModules/trendComposer');
 
 // Serve static files from the React app
-app.use('/', express.static(path.join(__dirname, 'client/build')));
-app.use('/bot', express.static(path.join(__dirname + '/bot/index.html')));
+app.use(express.static(path.join(__dirname, 'client/build')));
 
 // Put all API endpoints under '/api'
 app.get('/trends', (req, res) => {
