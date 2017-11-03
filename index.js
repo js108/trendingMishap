@@ -17,6 +17,7 @@ app.get('/trends', (req, res) => {
 
 app.get('/' + process.env.BOT_ENDPOINT, (req, res) => {
 	res.status(200).send('worked');
+	res.sendFile(path.join(__dirname+'/client/build/index.html'));
 	trendComposer();
 	console.log('pinged');
 });
