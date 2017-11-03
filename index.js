@@ -9,6 +9,7 @@ const trendComposer = require('./myModules/trendComposer');
 
 // Serve static files from the React app
 app.use(express.static(path.join(__dirname, 'client/build')));
+app.use('/bot', express.static(path.join(__dirname + '/bot')));
 
 // Put all API endpoints under '/api'
 app.get('/trends', (req, res) => {
@@ -16,7 +17,7 @@ app.get('/trends', (req, res) => {
 });
 
 app.get('/' + process.env.BOT_ENDPOINT, (req, res) => {
-	res.status(200);
+	res.status(200).send('worked');
 	trendComposer();
 	console.log('pinged');
 });
