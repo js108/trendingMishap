@@ -18,7 +18,7 @@ app.get('/trends', (req, res) => {
 app.get('/' + process.env.BOT_ENDPOINT, (req, res) => {
 	trendComposer();
 	console.log('pinged');
-	res.sendFile(path.join(__dirname+'/client/build/bot.html'));
+	res.status(200);
 });
 
 // The "catchall" handler: for any request that doesn't
@@ -28,6 +28,7 @@ app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname+'/client/build/index.html'));
 });
 */
+
 const port = process.env.PORT || 5000;
 app.listen(port);
 
