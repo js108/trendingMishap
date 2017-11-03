@@ -18,11 +18,11 @@ app.get('/trends', (req, res) => {
 app.get('/' + process.env.BOT_ENDPOINT, (req, res) => {
 	trendComposer();
 	console.log('pinged');
-	res.writeHead(200, {'Content-Type': 'text/event-stream'});
+	res.sendFile(path.join(__dirname+'/client/build/bot.html'));
 });
 
 // The "catchall" handler: for any request that doesn't
-// match one above, send back React's index.html file.
+// match ones above, send back React's index.html file.
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname+'/client/build/index.html'));
 });
