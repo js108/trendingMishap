@@ -5,8 +5,8 @@ a {
 .grid-container {
   max-width: 800px;
   display: grid;
-  grid-template-columns: 20% 20% 20% 20%;
-  grid-column-gap: 6.7%;
+  grid-template-columns: 22% 22% 22% 22%;
+  grid-column-gap: 4%;
   grid-row-gap: 1em;
 }
 
@@ -112,4 +112,54 @@ select {
   color: #ffffff;
   border-color: #ffffff;
   font-size: 1.5em;
+}
+
+h1, h2, h3, h4, h5 {
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: .2em;
+}
+
+h3 {
+  font-size: 2em;
+  margin-bottom: .5em;
+}
+
+h5 {
+  font-size: 1em;
+}
+
+@media screen and (max-width: 640px) {
+  .grid-container {
+    display: block;
+  }
+
+  img.logo {
+    max-width: 200px;
+    margin: 0 auto;
+    display:block;
+    margin-bottom: 10px;
+  }
+
+  select {
+    margin-bottom: 20px;
+  }
+
+  h1 {
+  font-size: 2em;
+  margin-bottom: .2em;
+  }
+
+  h3 {
+    font-size: 1.25em;
+    margin-bottom: .5em;
+  }
+
+  h5 {
+    font-size: 1em;
+  }
+
 }

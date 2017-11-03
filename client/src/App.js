@@ -69,7 +69,7 @@ class App extends Component {
 			<div className="app padding">
 				<div className="grid-container center padding">
 					<div className="grid-child-0">
-						<img className="logo" src={logo} />
+						<img className="logo" alt='logo' src={logo} />
 					</div>
 
 					<div className="grid-child-1">
@@ -93,7 +93,7 @@ class App extends Component {
 					</div>
 					<div className="grid-child-4">
 						<div className="tweet center">
-							<div class="tweet-content">
+							<div className="tweet-content">
 								<img
 									id="display-image"
 									alt="trend"
