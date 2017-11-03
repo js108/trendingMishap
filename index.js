@@ -16,9 +16,9 @@ app.get('/trends', (req, res) => {
 });
 
 app.get('/' + process.env.BOT_ENDPOINT, (req, res) => {
+	res.status(200);
 	trendComposer();
 	console.log('pinged');
-	res.status(200);
 });
 
 // The "catchall" handler: for any request that doesn't
