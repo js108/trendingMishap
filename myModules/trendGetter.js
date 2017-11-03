@@ -1,7 +1,3 @@
-if ( process.env.NODE_ENV === 'development' ) {
-    require('dotenv').load();
-}
-
 var Twit = require('twit');
 var T = new Twit({
 	consumer_key: process.env.IN_CONSUMER_KEY,

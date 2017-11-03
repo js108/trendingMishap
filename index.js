@@ -1,3 +1,6 @@
+if ( process.env.NODE_ENV === 'development' ) {
+    require('dotenv').load();
+}
 const express = require('express');
 const path = require('path');
 const app = express();
@@ -12,7 +15,7 @@ app.get('/trends', (req, res) => {
 	tweetReader(res);
 });
 
-app.get('/bot', (req, res) => {
+app.get('/' + process.env.BOT_ENDPOINT, (req, res) => {
 	trendComposer();
 	console.log('pinged');
 });
