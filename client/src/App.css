@@ -132,6 +132,7 @@ h5 {
   font-size: 1em;
 }
 
+
 @media screen and (max-width: 640px) {
   .grid-container {
     display: block;
