@@ -9,7 +9,7 @@ class Header extends Component {
 				<h5>
 					Follow{' '}
 					<a href="https://twitter.com/trending_mishap">the bot</a> /
-					See <a href="#">the c0de</a> / Contact{' '}
+					See <a href="https://github.com/js108/trendingMishap">the c0de</a> / Contact{' '}
 					<a href="http://joeschoech.com">Joe</a>
 				</h5>
 			</div>
