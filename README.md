@@ -35,7 +35,7 @@ The relevant files are commented if you feel like taking a look.
 
 7. (in a second terminal window — you need to run both servers at once) cd client
 
-8. yarn start (to start yr react server)
+8. yarn start (to start your react server)
 
 That should get your dev environment running.
 
@@ -44,4 +44,4 @@ The info on how to trigger BOT_ENDPOINT and TREND_ENDPOINT is in .env-example. I
 I set up the app based on this article [Create React App with Express in Production](https://daveceddia.com/create-react-app-express-production) which was super helpful and has further info about how to deploy to heroku. This page will tell you how to configure your heroku env variables [Configuration and Config Vars](https://devcenter.heroku.com/articles/config-vars).
 
 ## What's interesting about this
-Watching the mind strive for meaning.
+Watching the mind create meaning.
