@@ -1,6 +1,5 @@
 # Trending Mishap
-## A bot who wants to be part of the conversation
-## (but all it knows are twitter trends)
+*A bot who wants to be part of the conversation (but all it knows are twitter trends)*
 
 This repo contains a twitter bot and a website that combine random twitter trends to create strange aleatory tweets. It's written in javascript using node and react.
 
