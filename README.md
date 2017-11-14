@@ -39,7 +39,7 @@ The relevant files are commented if you want see more.
 
 That should get your dev environment running.
 
-The info on how to trigger trendComposer and botComposer is in .env-example. I have botComposer running once an hour which seems like a reasonably humble tweet volume. And I run trendComposer every 15 minutes so that when people visit the site the trends are fresh. If you run trendComposer more than ~12 times an hour twitter will limit you and the new data won't come through fyi.
+The info on how to trigger BOT_ENDPOINT and TREND_ENDPOINT is in .env-example. I have BOT_ENDPOINT running once an hour which seems like a reasonably humble tweet volume. And I trigger TREND_ENDPOINT every 15 minutes so that when people visit the site the trends are fresh. If you run TREND_ENDPOINT more than ~12 times an hour twitter will limit you and the new data won't come through fyi. TREND_ENDPOINT runs trendComposer.js and BOT_ENDPOINT runs botComposer.js as you might've guessed.
 
 I set up the app based on this article [Create React App with Express in Production](https://daveceddia.com/create-react-app-express-production) which was super helpful and has further info about how to deploy to heroku. This article will tell you how to configure your heroku env variables [Configuration and Config Vars](https://devcenter.heroku.com/articles/config-vars).
 
