@@ -11,7 +11,7 @@ The node app (index.js) has three routines, which are in the /myModules director
 
 **trendComposer.js** Composes functions that search the twitter api, clean up the data, and save it to the json that the other routines will use.
 
-**botComposer.js** Composes functions that writes a tweet and tweets it via the bot.
+**botComposer.js** Composes functions that read the json, write a tweet, and tweet it via the bot.
 
 **tweetReader.js** Reads the json and sends it to the react site when requested.
 
