@@ -6,6 +6,7 @@ const path = require('path');
 const app = express();
 const tweetReader = require('./myModules/tweetReader');
 const trendComposer = require('./myModules/trendComposer');
+const botComposer = require('./myModules/botComposer');
 
 // Serve static files from the React app
 app.use(express.static(path.join(__dirname, 'client/build')));
@@ -18,14 +19,14 @@ app.get('/trends', (req, res) => {
 app.get('/' + process.env.BOT_ENDPOINT, (req, res) => {
 	res.status(200).send('worked');
 	res.sendFile(path.join(__dirname+'/client/build/index.html'));
-	trendComposer();
+	botComposer();
 	console.log('bot endpoint pinged');
 });
 
 app.get('/' + process.env.TREND_ENDPOINT, (req, res) => {
 	res.status(200).send('worked');
 	res.sendFile(path.join(__dirname+'/client/build/index.html'));
-	botComposer();
+	trendComposer();
 	console.log('trend getting endpoint pinged');
 });
 
