@@ -1,3 +1,9 @@
+/* 
+
+Uses the async.waterfall library to compose functions that will make the bot tweet.
+
+*/
+
 var async = require('async');
 var botTweetReader = require('./botTweetReader');
 var botTweetCreator = require('./botTweetCreator');

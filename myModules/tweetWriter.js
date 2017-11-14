@@ -1,3 +1,9 @@
+/*
+
+Recives an array of objects and writes them to json.
+
+*/
+
 var jsonfile = require('jsonfile');
 
 function tweetWriter(array, callback) {

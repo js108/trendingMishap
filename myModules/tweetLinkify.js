@@ -1,3 +1,11 @@
+/* 
+
+Receives an array of objects and passes a copy + a new linkifiedText proerty.
+
+The linkifiedText proerty is the truncatedText proerty with the links linkified.
+
+*/
+
 function tweetLinkify(array, callback) {
 	console.log('3.75 tweetLinkify');
 	var trendArray = array;

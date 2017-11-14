@@ -1,3 +1,11 @@
+/* 
+
+Reads a cashed json file for testing purposes because the twitter api is limited.
+
+Not part of the actual app.
+
+*/
+
 var jsonfile = require('jsonfile');
 
 function testReader(callback) {

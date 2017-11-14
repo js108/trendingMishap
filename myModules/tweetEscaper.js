@@ -1,3 +1,11 @@
+/* 
+
+Receives and array of objects and passes a copy + a new escapedText property.
+
+The escapedText property is the truncatedText property with 3 common characters (#, &, ;) escaped.
+
+*/
+
 function tweetEscaper(array, callback) {
 	console.log('3.93 tweetEscaper');
 	var trendArray = array;

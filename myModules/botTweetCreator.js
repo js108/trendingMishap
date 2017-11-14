@@ -1,3 +1,11 @@
+/* 
+
+Recieves an array of objects and passes a string based on two random numbers.
+
+The string is our bot's tweet.
+
+*/
+
 function botTweetCreator(array, callback) {
 	console.log('9 botTweetCreator');
 

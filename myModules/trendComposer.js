@@ -1,3 +1,9 @@
+/* 
+
+Uses the async.waterfall library to compose functions that search the twitter api, clean up the data, and save it to json.
+
+*/
+
 var async = require('async');
 var trendGetter = require('./trendGetter');
 var tweetSearcher = require('./tweetSearcher');

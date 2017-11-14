@@ -1,3 +1,9 @@
+/* 
+
+Gets popular trends from the twitter api and passes them as an array of strings.
+
+*/
+
 var Twit = require('twit');
 var T = new Twit({
 	consumer_key: process.env.IN_CONSUMER_KEY,

@@ -1,3 +1,11 @@
+/* 
+
+Receives an array of objects and passes a new array of objects containing the proerties name, text, media, and mediaURl.
+
+It takes the vast nested info returned by the twitter api and teases out the stuff we are looking for.
+
+*/
+
 function tweetExtractor(array, callback) {
 	console.log('3 tweetExtractor');
 

@@ -1,3 +1,9 @@
+/*
+
+Reads a json file and passes it to express's res parameter as an array (named obj).
+
+*/
+
 var jsonfile = require('jsonfile');
 
 function tweetReader(res) {

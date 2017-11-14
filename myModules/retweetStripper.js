@@ -1,3 +1,11 @@
+/* 
+
+Recives an array of objects and passes a copy + a new strippedText property.
+
+The strippedText proprty is the text property with retweets stripped out — eg "RT @on3ness:" will be removed if it appears at the begining of a tweet
+
+*/
+
 function retweetStripper(array, callback) {
 	console.log('3.5 retweetStripper');
 	var trendArray = array;

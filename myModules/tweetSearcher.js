@@ -1,3 +1,13 @@
+/*
+
+Recives an array of strings and passes an array of objects.
+
+It searches the twitter api for the strings in the array and returns 50 results from each which are pushed to an array.
+
+If the twitter api limits us it pushes 'twitter api error' to the array instead of the results.
+
+*/
+
 var Twit = require('twit');
 var T = new Twit({
 	consumer_key: process.env.IN_CONSUMER_KEY,
@@ -23,7 +33,7 @@ function tweetSearcher(array, callback) {
 			response
 		) {
 			if (error) {
-				trendArray.push('error');
+				trendArray.push('twitter api error');
 				console.log(
 					'search error',
 					trendArray.length,

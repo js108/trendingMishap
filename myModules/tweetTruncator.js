@@ -1,3 +1,11 @@
+/*
+
+Recives an array of objects and passes a copy with a new truncatedText property.
+
+the truncatedText proerty is the strippedText property with all characters > 115 deleted.
+
+*/
+
 function tweetTruncator(array, callback) {
 	console.log('3.87 tweetTruncator');
 	var trendArray = array;

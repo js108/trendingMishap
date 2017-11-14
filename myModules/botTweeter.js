@@ -1,3 +1,11 @@
+/* 
+
+Recives a string and posts it via the twitter api.
+
+This is how the bot tweets.
+
+*/
+
 var Twit = require('twit');
 var T = new Twit({
 	consumer_key: process.env.OUT_CONSUMER_KEY,

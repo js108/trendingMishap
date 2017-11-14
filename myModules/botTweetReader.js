@@ -1,3 +1,9 @@
+/* 
+
+Reads a json file and passes it as an array (named obj).
+
+*/
+
 var jsonfile = require('jsonfile');
 
 function botTweetReader(callback) {
