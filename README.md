@@ -1,6 +1,6 @@
-#Trending Mishap
-##A bot who wants to be part of the conversation
-##(but all it knows are twitter trends)
+# Trending Mishap
+## A bot who wants to be part of the conversation
+## (but all it knows are twitter trends)
 
 This repo contains a twitter bot and a website that combine random twitter trends to create strange aleatory tweets. It's written in javascript using node and react.
 
@@ -20,7 +20,7 @@ ALl the react stuff lives in the /client directory. The main app is /client/src/
 
 The relevant files are commented if you want see more.
 
-##How to make your own
+## How to make your own
 
 1. install node, react, and yarn
 
@@ -42,5 +42,5 @@ That should get your dev environment running.
 
 I set up the app based on this article [Create React App with Express in Production](https://daveceddia.com/create-react-app-express-production) which was super helpful and has further info about how to deploy to heroku. This article will tell you how to configure your heroku env variables [Configuration and Config Vars](https://devcenter.heroku.com/articles/config-vars).
 
-##What's interesting about this
+## What's interesting about this
 Watching the mind strive for meaning.
