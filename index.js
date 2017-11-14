@@ -19,7 +19,14 @@ app.get('/' + process.env.BOT_ENDPOINT, (req, res) => {
 	res.status(200).send('worked');
 	res.sendFile(path.join(__dirname+'/client/build/index.html'));
 	trendComposer();
-	console.log('pinged');
+	console.log('bot endpoint pinged');
+});
+
+app.get('/' + process.env.TREND_ENDPOINT, (req, res) => {
+	res.status(200).send('worked');
+	res.sendFile(path.join(__dirname+'/client/build/index.html'));
+	botComposer();
+	console.log('trend getting endpoint pinged');
 });
 
 // The "catchall" handler: for any request that doesn't

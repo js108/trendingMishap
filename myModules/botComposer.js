@@ -9,9 +9,9 @@ function botComposer() {
 		result
 	) {
 		if (err) {
-			console.log('botCompose error');
+			console.log('botCompose failed');
 		} else {
-			console.log('botCompose works');
+			console.log('botCompose succeeded');
 		}
 	});
 }

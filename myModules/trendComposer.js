@@ -25,7 +25,12 @@ function trendComposer() {
 			tweetWriter,
 		],
 		function(err, result) {
-			botComposer();
+			if (err) {
+				console.log('trendComposer failed');
+			}
+			else {
+				console.log('trendComposer succeeded');
+			}
 		}
 	);
 }
