@@ -1,9 +1,9 @@
 # Trending Mishap
 *A bot who wants to be part of the conversation (but all it knows are twitter trends)*
 
-This repo contains a twitter bot and a website that combine random twitter trends to create strange aleatory tweets. It's written in javascript using node and react.
-
 [The Site](https://trending-mishap.herokuapp.com/) | [The Bot](https://twitter.com/trending_mishap)
+
+This repo contains a twitter bot and a website that combine random twitter trends to create strange aleatory tweets. It's written in javascript using node and react.
 
 ## How it works
 
