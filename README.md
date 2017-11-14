@@ -3,15 +3,15 @@
 
 This repo contains a twitter bot and a website that combine random twitter trends to create strange aleatory tweets. It's written in javascript using node and react.
 
-[The site](https://trending-mishap.herokuapp.com/) | [The Bot](https://twitter.com/trending_mishap)
+[The Site](https://trending-mishap.herokuapp.com/) | [The Bot](https://twitter.com/trending_mishap)
 
-##How it works
+## How it works
 
-The node app(index.js) has three routines, all of which are in the /myModules directory:
+The node app (index.js) has three routines, which are in the /myModules directory:
 
-**trendcomposer.js** Composes functions that search the twitter api, clean up the data, and save it to the json that the other routines will use.
+**trendComposer.js** Composes functions that search the twitter api, clean up the data, and save it to the json that the other routines will use.
 
-**botcomposer.js** Composes functions that writes a tweet and tweets it via the bot.
+**botComposer.js** Composes functions that writes a tweet and tweets it via the bot.
 
 **tweetReader.js** Reads the json and sends it to the react site when requested.
 
@@ -38,6 +38,8 @@ The relevant files are commented if you want see more.
 8. yarn start (to start yr react server)
 
 That should get your dev environment running.
+
+The info on how to trigger trendComposer and botComposer is in .env-example. I have botComposer running once an hour which seems like a reasonably humble tweet volume. And I run trendComposer every 15 minutes so that when people visit the site the trends are fresh. If you run trendComposer more than ~12 times an hour twitter will limit you and the new data won't come through fyi.
 
 I set up the app based on this article [Create React App with Express in Production](https://daveceddia.com/create-react-app-express-production) which was super helpful and has further info about how to deploy to heroku. This article will tell you how to configure your heroku env variables [Configuration and Config Vars](https://devcenter.heroku.com/articles/config-vars).
 
