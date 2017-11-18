@@ -100,7 +100,7 @@ img#display-image {
 
 .logo {
   border-radius: 50%;
-  max-width: 300px;
+  max-width: 200px;
 }
 
 img.logo {
@@ -146,9 +146,6 @@ h5 {
   }
 
   img.logo {
-    max-width: 200px;
-    margin: 0 auto;
-    display:block;
     margin-bottom: 10px;
   }
 

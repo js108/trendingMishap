@@ -16,6 +16,7 @@ var T = new Twit({
 
 function botTweeter(string, callback) {
 	console.log('10 botTweeter');
+	console.log('string', string);
   
 	T.post('statuses/update', { status: string }, function(err, data, response) {
 		callback(null);
