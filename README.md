@@ -35,7 +35,9 @@ The relevant files are commented if you feel like taking a look.
 
 7. (in a second terminal window — you need to run both servers at once) cd client
 
-8. yarn start (to start your react server)
+8. yarn install
+
+9. yarn start (to start your react server)
 
 That should get your dev environment running.
 
