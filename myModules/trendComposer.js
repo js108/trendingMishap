@@ -32,7 +32,7 @@ function trendComposer() {
 		],
 		function(err, result) {
 			if (err) {
-				console.log('trendComposer failed');
+				console.log('trendComposer failed, prob due to twiter api limtiing');
 			}
 			else {
 				console.log('trendComposer succeeded');
