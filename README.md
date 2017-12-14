@@ -15,7 +15,7 @@ The node app (index.js) has three routines, which are in the /myModules director
 
 **tweetReader.js** Reads the json and sends it to the react site when requested.
 
-All the react stuff lives in the /client directory. The main app is /client/src/App.js. It calls /myModules/tweetReader.js via /index.js everytime someone visits and presents them with an interface that lets them write and tweet their own mishaps.
+ The main app is /client/src/App.js. It calls /myModules/tweetReader.js via /index.js everytime someone visits and presents them with an interface that lets them write and tweet their own mishaps. All the react stuff lives in the /client directory and needs to be refactored and commented.
 
 The relevant files are commented if you feel like taking a look.
 
