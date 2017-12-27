@@ -29,8 +29,8 @@ class App extends Component {
 		this.removeLoader = this.removeLoader.bind(this);
 	}
 
-	// get the trends array from the backend, routing is in /index.js (not to be confused with /client/index.js)
-	// then put them in state, remove the loading animation, and randomly set the dropdown lists values
+	// get the trends array from the /index.js (not to be confused with /client/index.js)
+	// then put it in state, remove the loading animation, and randomly set the dropdown lists values
 	componentDidMount() {
 		fetch('/trends')
 			.then(res => res.json())

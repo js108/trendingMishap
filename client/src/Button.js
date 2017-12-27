@@ -4,7 +4,7 @@ the button that posts the tweet on click
 
 */
 
-import React, { Component } from 'react';
+import React from 'react';
 
 const Button = ({text, media}) => (		
 	<button className="tweet-button padding">
